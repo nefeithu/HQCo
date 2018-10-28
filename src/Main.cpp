@@ -10,19 +10,20 @@ int Double(int i)
 }
 int foo(coroutine & c, int i)
 {
+    int iRet = 0;
     reenter(c)
     {
-        Double(i);
+        iRet = Double(i);
         yield;
 
-        Double(i+1);
+        iRet = Double(i+1);
         yield;
         
-        Double(i+2);
+        iRet = Double(i+2);
         yield;
     }
 
-    return 0;
+    return iRet;
 }
 
 int main()
