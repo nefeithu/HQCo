@@ -32,5 +32,19 @@ int main()
     {
         printf("%dth call %d, co stat(%d)\n", i+1, foo(c, 1), c.GetValue());
     }
+
+    c.setValue(0);
+    printf("co reset to init stat 0");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%dth call %d, co stat(%d)\n", i+1, foo(c, 1), c.GetValue());
+    }
+
+    c.setValue(1);
+    printf("co reset to illegal stat 1");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%dth call %d, co stat(%d)\n", i+1, foo(c, 1), c.GetValue());
+    }
     return 0;
 }
