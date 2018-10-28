@@ -254,6 +254,9 @@ public:
   /// Returns true if the coroutine has reached its terminal state.
   bool is_complete() const { return value_ == -1; }
 
+  void setValue(int iSetVar) {value_ = iSetVar;}
+  int GetValue() { return value_; }
+
 private:
   friend class detail::coroutine_ref;
   int value_;
