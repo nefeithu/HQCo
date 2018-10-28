@@ -18,6 +18,11 @@
 # define yield BOOST_ASIO_CORO_YIELD
 #endif
 
+#ifndef yieldn
+# define yieldn(logic_id) BOOST_ASIO_CORO_YIELD_IMPL(logic_id)
+#endif
+
+
 #ifndef fork
 # define fork BOOST_ASIO_CORO_FORK
 #endif
