@@ -53,10 +53,10 @@ int loo(coroutine & c, int i)
         iRet = i*i;
         yieldn(1);
 
-        iRet = (i+1)(i+1);
+        iRet = (i+1)*(i+1);
         yieldn(2);
         
-        iRet = (i+2)(i+2);
+        iRet = (i+2)*(i+2);
         yieldn(3);
     }
 
