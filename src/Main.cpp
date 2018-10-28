@@ -29,7 +29,7 @@ int main()
 {
     for (int i = 0; i < 5; i++)
     {
-        prinf("%dth call %d", i+1, foo(c, 1));
+        printf("%dth call %d", i+1, foo(c, 1));
     }
     return 0;
 }
