@@ -4,7 +4,7 @@
 using namespace boost::asio;
 coroutine c;
 
-int double(int i)
+int Double(int i)
 {
     return 2*i;
 }
@@ -12,13 +12,13 @@ int foo(coroutine & c, int i)
 {
     reenter(c)
     {
-        double(i);
+        Double(i);
         yield;
 
-        double(i+1)
+        Double(i+1)
         yield;
         
-        double(i+2);
+        Double(i+2);
         yield;
     }
 
