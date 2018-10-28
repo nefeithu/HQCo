@@ -1,6 +1,6 @@
 #include <iostream>
 #include <list>
-#include <boost/any.hpp>
+#include <boost/any.hpp> 
 
 
 typedef std::list<boost::any> list_any;
