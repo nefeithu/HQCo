@@ -15,7 +15,7 @@ int foo(coroutine & c, int i)
         Double(i);
         yield;
 
-        Double(i+1)
+        Double(i+1);
         yield;
         
         Double(i+2);
